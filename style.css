@@ -21,8 +21,8 @@
 }
 
 .header__title {
-    margin-top: 2vh;
-    font-size: 2.5vw;
+    margin-top: 1.5vh;
+    font-size: 5.25vmin;
     align-self: center;
     color: white;
 }
@@ -37,8 +37,9 @@
 
 a {
     text-decoration: none;
-    font-size: 1.5vw;
+    font-size: 3.25vmin;
     color: white;
+    padding-bottom: .5vh;
 }
 
 a:hover {
@@ -46,7 +47,7 @@ a:hover {
 }
 
 .section {
-    height: 57vh;
+    height: 65vh;
     width: 100%;
     margin: auto;
     display: flex;
@@ -63,26 +64,26 @@ a:hover {
 
 .section__title {
     padding: 1vh;
-    font-size: 1.75vw;
+    font-size: 4vmin;
     font-weight: 600;
     text-decoration: underline;
 }
 
 .section__text {
     padding: .5vh;
-    font-size: 1.25vw;
+    font-size: 2.8vmin;
 }
 
 .section__subtext {
     padding: .5vh;
-    font-size: 1vw;
+    font-size: 2.2vmin;
     font-style: italic;
 }
 .iframe-container {
   position: relative;
   margin: auto;
-  width: 44vw;
-  height: 40vh;
+  width: 50vw;
+  height: 47vh;
   z-index: 0;
   box-shadow: 3px 3px 5px black;
 }
@@ -110,5 +111,5 @@ a:hover {
 }
 
 .footer__title {
-    font-size: 1.5vw;
+    font-size: 4vmin;
 }
