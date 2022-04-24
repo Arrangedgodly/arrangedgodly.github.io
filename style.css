@@ -31,12 +31,56 @@
     z-index: 1;
 }
 
-.header__title {
-    margin-top: 1.5vh;
-    font-size: 5.25vmin;
-    align-self: center;
-    color: white;
-    text-shadow: 2px 2px 3px black;
+.header__logo__main {
+    width: 50vmin;
+    height: auto;
+    margin: 1vmin auto auto auto;
+}
+
+.header__logo {
+    width: 12vmin;
+    height: 12vmin;
+    margin: 1vmin;
+}
+
+.header__logo_facebook {
+    background-image: url(./images/facebook-logo-off.svg);
+}
+
+.header__logo_facebook:hover {
+    background-image: url(./images/facebook-logo-on.svg);
+}
+
+.header__logo_tiktok {
+    background-image: url(./images/tiktok-logo-off.svg);
+}
+
+.header__logo_tiktok:hover {
+    background-image: url(./images/tiktok-logo-on.svg);
+}
+
+.header__logo_soundcloud {
+    background-image: url(./images/soundcloud-logo-off.svg);
+}
+
+.header__logo_soundcloud:hover {
+    background-image: url(./images/soundcloud-logo-on.svg);
+}
+
+.header__logo_youtube {
+    background-image: url(./images/youtube-logo-off.svg);
+}
+
+.header__logo_youtube:hover {
+    background-image: url(./images/youtube-logo-on.svg);
+}
+
+.header__logo_streaming {
+    background-image: url(./images/streaming-logo-off.svg);
+}
+
+.header__logo_streaming:hover {
+    background-image: url(./images/streaming-logo-on.svg);
 }
 
 .nav__list {
@@ -56,12 +100,6 @@ a {
     padding-bottom: .5vh;
 }
 
-a:hover {
-    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 .section {
     height: 65vh;
     width: 100%;
@@ -75,7 +113,7 @@ a:hover {
 }
 
 .section:first-of-type {
-    margin-top: 32vh;
+    margin-top: 30vh;
 }
 
 .section__title {
@@ -115,6 +153,7 @@ a:hover {
   right: 0;
   width: 100%;
   height: 100%;
+  padding-bottom: 3vmin;
 }
 
 .footer {
