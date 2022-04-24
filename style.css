@@ -22,8 +22,7 @@
     align-content: space-between;
     justify-content: space-between;
     font-family: 'Fjalla One', sans-serif;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-    background-blend-mode: multiply,multiply;
+    background-image: url(./images/header-background.jpg);
     box-shadow: 1px 1px 2px black;
     position: fixed;
     top: 0;
@@ -34,7 +33,7 @@
 .header__logo__main {
     width: 50vmin;
     height: auto;
-    margin: 1vmin auto auto auto;
+    margin: 1vmin auto 1vmin auto;
 }
 
 .header__logo {
@@ -112,8 +111,20 @@ a {
     box-shadow: 1px 1px 2px black;
 }
 
+.section_backgroundone {
+    background-image: url(./images/section-background.jpg);
+}
+
+.section_backgroundtwo {
+    background-image: url(./images/section-background2.jpg);
+}
+
+.section_backgroundthree {
+    background-image: url(./images/section-background3.jpg);
+}
+
 .section:first-of-type {
-    margin-top: 30vh;
+    margin-top: 32vh;
 }
 
 .section__title {
@@ -122,12 +133,18 @@ a {
     font-weight: 600;
     text-decoration: underline;
     margin: auto;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    background: rgba(0, 0, 0, 0.47);
 }
 
 .section__text {
     padding: .5vh;
     font-size: 2.8vmin;
     margin: auto;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    background: rgba(0, 0, 0, 0.47);
 }
 
 .section__subtext {
@@ -135,6 +152,9 @@ a {
     font-size: 2.2vmin;
     font-style: italic;
     margin: auto;
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    background: rgba(0, 0, 0, 0.47);
 }
 .iframe-container {
   position: relative;
@@ -161,7 +181,7 @@ a {
     align-items: center;
     justify-content: center;
     font-family: 'Fjalla One', sans-serif;
-    background-image: linear-gradient(to top, #b224ef 0%, #7579ff 100%);
+    background-image: url(./images/footer-background.jpg);
     position: relative;
     bottom: 0;
     width: 100%;
@@ -170,4 +190,6 @@ a {
 
 .footer__title {
     font-size: 4vmin;
+    color: white;
+    text-shadow: 2px 2px 3px black;
 }
