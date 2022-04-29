@@ -39,7 +39,7 @@
 .header__logo {
     width: 12vmin;
     height: 12vmin;
-    margin: 1vmin;
+    margin: auto;
 }
 
 .header__logo_facebook {
@@ -124,7 +124,7 @@ a {
 }
 
 .section:first-of-type {
-    margin-top: 32vh;
+    margin-top: 28vh;
 }
 
 .section__title {
@@ -159,14 +159,18 @@ a {
 .iframe-container {
   position: relative;
   margin: auto;
-  width: 50vw;
-  height: 47vh;
+  width: 45%;
+  height: 65%;
   z-index: 0;
   box-shadow: 3px 3px 5px black;
 }
 
 .iframe {
   position: absolute;
+  border: 5px;
+  border-radius: 10px;
+  border-color: rgba(0, 0, 0, 0.47);
+  margin: 0;
   top: 0;
   left: 0;
   bottom: 0;
