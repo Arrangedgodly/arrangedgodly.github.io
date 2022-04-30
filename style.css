@@ -34,12 +34,19 @@
     width: 50vmin;
     height: auto;
     margin: 1vmin auto 1vmin auto;
+    animation: jitters 6s infinite linear alternate;
 }
 
 .header__logo {
     width: 12vmin;
     height: 12vmin;
     margin: auto;
+    transition: transform 0.4s ease-in-out;
+    transition: background-image 0.4s linear;
+}
+
+.header__logo:hover {
+    transform: scale(1.2) translate(0, -10%);
 }
 
 .header__logo_facebook {
@@ -196,4 +203,13 @@ a {
     font-size: 4vmin;
     color: white;
     text-shadow: 2px 2px 3px black;
+}
+
+@keyframes jitters {
+    from {
+        transform: scale(0.6);
+    }
+    to {
+        transform: scale(1);
+    }
 }
