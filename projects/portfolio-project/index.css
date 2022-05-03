@@ -1,0 +1,159 @@
+@import url("./blocks/footer.css");
+@import url("./blocks/header.css");
+@import url("about.css");
+
+body {
+ margin: 15vh 0 0 0;
+ font-family: 'Montserrat', sans-serif;
+ text-align: center;
+ background-color: #457F85;
+ padding: 0;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  scroll-margin-top: 15vh;
+}
+
+.intro__title {
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 2.7vw;
+  margin: 2vh 0 2vh;
+}
+
+.intro__text {
+  font-style: italic;
+  font-size: 2vw;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  width: 80%;
+  margin: 1vh 0 3vh;
+}
+
+.practicum-projects,
+.fcc-projects {
+  scroll-margin-top: 15vh;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.project_cat_title {
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 3vw;
+}
+
+.project_cat_subtitle {
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 2vw;
+}
+
+.project_cat_desc {
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 1.55vw;
+  font-style: italic;
+  width: 72.5%;
+}
+
+.project_cat_subdesc {
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 1.45vw;
+  font-style: italic;
+  width: 50%;
+  margin: 2vh 0 2vh 0;
+}
+
+.project_cat_link {
+  color: #84EBF5;
+  text-decoration: none;
+}
+
+.project_cat_link:hover {
+  color: #02707A;
+}
+
+.project__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  column-gap: .5vw;
+  margin: 3vh 0 3vh 0;
+}
+
+.project__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  width: 15vw;
+  height: 15vw;
+  margin: .5vw;
+  background-color: #fff;
+}
+
+.project__card_title {
+  font-weight: bolder;
+  text-shadow: 1px 1px 1px #94B2B5;
+  font-size: 1.5vw;
+}
+
+.project__card_text {
+  display: none;
+  opacity: 0;
+  color: #fff;
+  text-shadow: 1px 1px 1px #94B2B5;
+  font-style: italic;
+  font-size: .85vw;
+  width: 80%;
+  padding-bottom: 3vh;
+}
+
+.project__card:hover .project__card_title {
+  color: white;
+  text-shadow: 1px 1px 5px #000;
+  transition: color 0.6s ease-in-out;
+  transition: text-shadow 0.6s ease-in-out;
+}
+
+.project__card:hover .project__card_text {
+  display: block;
+  opacity: 1;
+  text-shadow: 1px 1px 5px #000;
+  transition: display 0.6s ease-in-out;
+  transition: opacity 0.6s ease-in-out;
+  transition: text-shadow 0.6s ease-in-out;
+}
+
+.project__card:hover {
+  border-color: #84EBF5;
+  box-shadow: 1px 1px 8px #000;
+  background-color: #02707A;
+  transform: scale(1.1);
+  transition: border-color 0.6s ease-in-out;
+  transition: box-shadow 0.6s ease-in-out;
+  transition: background-color 0.6s ease-in-out;
+  transition: transform 0.6s linear;
+}
+
+.project__card__link {
+  text-decoration: none;
+  color: black;
+}
+
+.project_cat_subtitle,
+.project_cat_title {
+  margin: 2.75vh 0 2.75vh 0;
+}

@@ -20,7 +20,7 @@
     display: flex;
     flex-direction: column;
     align-content: space-between;
-    justify-content: space-between;
+    justify-content: space-around;
     font-family: 'Fjalla One', sans-serif;
     background-image: url(./images/header-background.jpg);
     box-shadow: 1px 1px 2px black;
@@ -28,25 +28,26 @@
     top: 0;
     right: 0;
     z-index: 1;
+    overflow: hidden;
 }
 
 .header__logo__main {
     width: 50vmin;
     height: auto;
-    margin: 1vmin auto 1vmin auto;
+    margin: 2vmin auto 5vmin auto;
     animation: jitters 6s infinite linear alternate;
 }
 
 .header__logo {
-    width: 12vmin;
-    height: 12vmin;
-    margin: auto;
+    width: 10.5vmin;
+    height: 10.5vmin;
+    margin: 1vmin auto 1vmin;
     transition: transform 0.4s ease-in-out;
     transition: background-image 0.4s linear;
 }
 
 .header__logo:hover {
-    transform: scale(1.2) translate(0, -10%);
+    transform: scale(1.15) translate(0, -5%);
 }
 
 .header__logo_facebook {
@@ -131,7 +132,7 @@ a {
 }
 
 .section:first-of-type {
-    margin-top: 28vh;
+    margin-top: 18vmax;
 }
 
 .section__title {
@@ -166,8 +167,8 @@ a {
 .iframe-container {
   position: relative;
   margin: auto;
-  width: 45%;
-  height: 65%;
+  width: 30vw;
+  height: 20vw;
   z-index: 0;
   box-shadow: 3px 3px 5px black;
 }
@@ -189,8 +190,9 @@ a {
 
 .footer {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     font-family: 'Fjalla One', sans-serif;
     background-image: url(./images/footer-background.jpg);
     position: relative;
@@ -200,16 +202,26 @@ a {
 }
 
 .footer__title {
-    font-size: 4vmin;
+    font-size: 3vmin;
     color: white;
     text-shadow: 2px 2px 3px black;
+    margin-top: .5vh;
+}
+
+.footer__link {
+    font-size: 2vmin;
+    color: white;
+    text-decoration: none;
+    font-style: normal;
+    text-shadow: 2px 2px 3px black;
+    margin-bottom: .5vh;
 }
 
 @keyframes jitters {
     from {
-        transform: scale(0.6);
+        transform: scale(0.925);
     }
     to {
-        transform: scale(1);
+        transform: scale(1.075);
     }
 }
