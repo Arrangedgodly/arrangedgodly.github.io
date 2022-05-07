@@ -14,13 +14,16 @@
     margin: 0;
 }
 
+::-webkit-scrollbar {
+    width: 0;
+}
+
 .header {
     width: 100%;
-    height: auto;
+    height: 35vh;
     display: flex;
     flex-direction: column;
-    align-content: space-between;
-    justify-content: space-around;
+    justify-content: space-between;
     font-family: 'Fjalla One', sans-serif;
     background-image: url(./images/header-background.jpg);
     box-shadow: 1px 1px 2px black;
@@ -34,20 +37,20 @@
 .header__logo__main {
     width: 50vmin;
     height: auto;
-    margin: 2vmin auto 5vmin auto;
-    animation: jitters 6s infinite linear alternate;
+    margin: 2vh auto auto;
+    animation: jitters 8s infinite linear alternate;
 }
 
 .header__logo {
-    width: 10.5vmin;
-    height: 10.5vmin;
-    margin: 1vmin auto 1vmin;
+    width: 8vw;
+    height: 8vw;
+    margin-bottom: 1vh;
     transition: transform 0.4s ease-in-out;
     transition: background-image 0.4s linear;
 }
 
 .header__logo:hover {
-    transform: scale(1.15) translate(0, -5%);
+    transform: scale(1.05) translate(0, 5%);
 }
 
 .header__logo_facebook {
@@ -96,7 +99,7 @@
     text-decoration: none;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-shadow: 2px 2px 3px black;
 }
 
@@ -108,7 +111,7 @@ a {
 }
 
 .section {
-    height: 65vh;
+    min-height: 60vh;
     width: 100%;
     margin: auto;
     display: flex;
@@ -132,7 +135,7 @@ a {
 }
 
 .section:first-of-type {
-    margin-top: 18vmax;
+    margin-top: 35vh;
 }
 
 .section__title {
@@ -153,6 +156,8 @@ a {
     color: white;
     text-shadow: 2px 2px 3px black;
     background: rgba(0, 0, 0, 0.47);
+    width: 45%;
+    text-align: center;
 }
 
 .section__subtext {
@@ -166,9 +171,9 @@ a {
 }
 .iframe-container {
   position: relative;
-  margin: auto;
-  width: 30vw;
-  height: 20vw;
+  margin: 2vh auto 5vh auto;
+  width: 52vw;
+  height: 24vw;
   z-index: 0;
   box-shadow: 3px 3px 5px black;
 }
@@ -186,6 +191,10 @@ a {
   width: 100%;
   height: 100%;
   padding-bottom: 3vmin;
+}
+
+.audio__iframe {
+  margin-bottom: 5vh;
 }
 
 .footer {
