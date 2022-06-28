@@ -1,0 +1,9 @@
+.nav__list {
+  font-family: 'Doctor Glitch';
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  text-shadow: 2px 2px 3px black;
+}

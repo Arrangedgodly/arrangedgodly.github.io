@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Montserrat&display=swap'); /* font-family: 'Fjalla One', sans-serif; or font-family: 'Montserrat', sans-serif; */
+@import url("../blocks/header.css");
+@import url("../blocks/nav.css");
+@import url("../blocks/section.css");
+@import url("../blocks/iframe.css");
+@import url("../blocks/audio.css");
+@import url("../blocks/footer.css");
+
+@font-face {
+    font-family: 'Doctor Glitch';
+    src: url('../fonts/Doctor\ Glitch.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Hexagon';
+    src: url('../fonts/HEXAGON_.TTF') format('truetype');
+}
+
+* {
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 3.4vmin;
+  color: white;
+  padding-bottom: .5vh;
+}
+
+@keyframes jitters {
+  from {
+      transform: scale(0.925);
+  }
+  to {
+      transform: scale(1.075);
+  }
+}
