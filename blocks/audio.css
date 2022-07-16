@@ -1,3 +1,6 @@
 .audio__iframe {
   margin-bottom: 5vh;
+  overflow: hidden;
+  width: 50vw;
+  height: 15vh;
 }

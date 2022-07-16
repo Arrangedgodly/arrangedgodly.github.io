@@ -30,6 +30,7 @@
   padding: 1vh;
   font-size: 4vmin;
   font-weight: 600;
+  text-align: center;
   text-decoration: underline;
   margin: auto;
   color: white;
@@ -52,8 +53,33 @@
   padding: .5vh;
   font-size: 2.2vmin;
   font-style: italic;
+  text-align: center;
   margin: auto;
   color: white;
   text-shadow: 2px 2px 3px black;
   background: rgba(0, 0, 0, 0.47);
+}
+
+@media screen and (max-width: 720px) {
+  .section {
+    min-height: 50vh;
+  }
+  .section:first-of-type {
+    margin-top: 20vh;
+  }
+
+  .section__title {
+    font-size: 7vw;
+    max-width: 85vw;
+  }
+
+  .section__text {
+    font-size: 4.5vw;
+    width: 75vw;
+  }
+
+  .section__subtext {
+    font-size: 3.75vw;
+    width: 60vw;
+  }
 }
